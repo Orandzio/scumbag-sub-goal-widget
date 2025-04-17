@@ -6,7 +6,7 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const followMode = urlParams.has("followMode");
 const twitchUsername = urlParams.get("username") || '';
-const defaultGoalLabel = !followMode ? 'SUB GOAL' : 'FOLLOW GOAL'
+const defaultGoalLabel = !followMode ? 'ZOSTAJĘ BASENIARĄ' : 'ZOSTAJĘ BASENIARĄ'
 const goal = urlParams.get("goal") || defaultGoalLabel;
 
 ///////////////
