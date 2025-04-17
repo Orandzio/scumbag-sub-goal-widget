@@ -14,7 +14,7 @@ const goal = urlParams.get("goal") || defaultGoalLabel;
 ///////////////
 
 async function UpdateMetrics() {
-    document.getElementById("goalLabel").innerHTML = `${goal}: `;
+    document.getElementById("goalLabel").innerHTML = `${goal}: ⭐ `;
     if (!followMode)
         document.getElementById("subCountLabel").innerHTML = await GetSubCount(`https://decapi.me/twitch/subcount`);
     else
